@@ -69,6 +69,8 @@ sub _process_module {
         $str =~ s/^/ /gm;
         push @pod, $str, "\n";
 
+        push @pod, "The statistics is available in the C<\%STATS> package variable.\n\n";
+
         $self->add_text_to_section(
             $document, join("", @pod), 'STATISTICS',
             {
