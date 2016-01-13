@@ -1,5 +1,10 @@
 Revision history for Pod-Weaver-Plugin-WordList
 
+0.04    2016-01-13 (PERLANCAR)
+
+	- Add text that statistics is available in %STATS.
+
+
 0.03    2016-01-13 (PERLANCAR)
 
 	- Add Statistics section.
