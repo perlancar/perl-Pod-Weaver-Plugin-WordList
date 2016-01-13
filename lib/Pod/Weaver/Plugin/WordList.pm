@@ -74,17 +74,29 @@ sub weave_section {
 }
 
 1;
-# ABSTRACT: Put various information from scenario into POD
+# ABSTRACT: Plugin to use when building WordList::* distribution
 
 =for Pod::Coverage ^(weave_section)$
 
 =head1 SYNOPSIS
 
-In your C<weaver.ini>:
+In your F<weaver.ini>:
 
  [-WordList]
 
 
 =head1 DESCRIPTION
 
-This plugin is to be used when building C<WordList::*> modules.
+This plugin is to be used when building C<WordList::*> distribution. Currently
+it does the following:
+
+=over
+
+=item * Add a Synopsis section (it doesn't already exist) showing how to use the module
+
+=back
+
+
+=head1 SEE ALSO
+
+L<Dist::Zilla::Plugin::WordList>
