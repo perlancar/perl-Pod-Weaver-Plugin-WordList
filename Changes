@@ -1,5 +1,3 @@
-Revision history for Pod-Weaver-Plugin-WordList
-
 0.05    2016-01-13 (PERLANCAR)
 
 	- [Bugfix][dist] Forgot to depend on Pod::Weaver [CT].
