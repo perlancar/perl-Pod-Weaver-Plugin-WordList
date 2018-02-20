@@ -124,4 +124,8 @@ it does the following:
 
 =head1 SEE ALSO
 
+L<WordList>
+
 L<Dist::Zilla::Plugin::WordList>
+
+L<Pod::Weaver::Plugin::WordListC>
