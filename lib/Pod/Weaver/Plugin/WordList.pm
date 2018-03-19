@@ -127,5 +127,3 @@ it does the following:
 L<WordList>
 
 L<Dist::Zilla::Plugin::WordList>
-
-L<Pod::Weaver::Plugin::WordListC>
