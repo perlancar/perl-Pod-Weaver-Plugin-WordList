@@ -46,6 +46,10 @@ sub _process_module {
         push @pod, " # Call a callback for each word\n";
         push @pod, " \$wl->each_word(sub { my \$word = shift; ... });\n\n";
 
+        push @pod, " # Iterate\n";
+        push @pod, " my \$first_word = \$wl->first_word;\n";
+        push @pod, " while (defined(my \$word = \$wl->next_word)) { ... }\n\n";
+
         push @pod, " # Get all the words\n";
         push @pod, " my \@all_words = \$wl->all_words;\n\n";
 
