@@ -1,6 +1,8 @@
 package Pod::Weaver::Plugin::WordList;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -76,7 +78,7 @@ sub _process_module {
         push @pod, "The statistics is available in the C<\%STATS> package variable.\n\n";
 
         $self->add_text_to_section(
-            $document, join("", @pod), 'STATISTICS',
+            $document, join("", @pod), 'WORDLIST STATISTICS',
             {
                 after_section => ['SYNOPSIS'],
                 before_section => 'DESCRIPTION',
