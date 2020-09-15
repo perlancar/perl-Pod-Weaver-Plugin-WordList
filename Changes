@@ -1,3 +1,8 @@
+0.063   2020-09-15  Released-By: PERLANCAR; Urgency: high
+
+        - Merge releases 0.062 & 0.062.1.
+
+
 0.062.1  2020-09-14  Released-By: PERLANCAR; Urgency: medium; Status: Cancelled
 
 	- Rename generated POD section Statistics -> WordList Statistics.
