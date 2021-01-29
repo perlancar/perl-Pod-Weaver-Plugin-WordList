@@ -51,10 +51,10 @@ sub _process_module {
 
         push @pod, " # Pick a (or several) random word(s) from the list\n";
         push @pod, " my \$word = \$wl->pick;\n";
-        push @pod, " my \@words = \$wl->pick(3);\n\n";
+        push @pod, " my \@words = \$wl->pick(3);  # no duplicates\n\n";
 
         push @pod, " # Check if a word exists in the list\n";
-        push @pod, " if (\$wl->word_exists('foo')) { ... }\n\n";
+        push @pod, " if (\$wl->word_exists('foo')) { ... }  # case-sensitive\n\n";
 
         push @pod, " # Call a callback for each word\n";
         push @pod, " \$wl->each_word(sub { my \$word = shift; ... });\n\n";
@@ -63,7 +63,7 @@ sub _process_module {
         push @pod, " my \$first_word = \$wl->first_word;\n";
         push @pod, " while (defined(my \$word = \$wl->next_word)) { ... }\n\n";
 
-        push @pod, " # Get all the words\n";
+        push @pod, " # Get all the words (beware, some wordlists are *huge*)\n";
         push @pod, " my \@all_words = \$wl->all_words;\n\n";
 
         $self->add_text_to_section(
