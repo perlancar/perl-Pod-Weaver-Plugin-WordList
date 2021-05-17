@@ -50,8 +50,9 @@ sub _process_module {
         push @pod, " my \$wl = $package->new;\n\n";
 
         push @pod, " # Pick a (or several) random word(s) from the list\n";
-        push @pod, " my \$word = \$wl->pick;\n";
-        push @pod, " my \@words = \$wl->pick(3);  # no duplicates\n\n";
+        push @pod, " my (\$word) = \$wl->pick;\n";
+        push @pod, " my (\$word) = \$wl->pick(1);  # ditto\n";
+        push @pod, " my \@words  = \$wl->pick(3);  # no duplicates\n\n";
 
         push @pod, " # Check if a word exists in the list\n";
         push @pod, " if (\$wl->word_exists('foo')) { ... }  # case-sensitive\n\n";
